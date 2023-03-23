@@ -13,7 +13,8 @@ jobs:
       - run: gprbuild -Pdefault
       - name: Generate Changelog
         run: echo "# Good things have arrived" > ${{ github.workspace }}-CHANGELOG.txt
-      - uses: actions/upload-artifact@v3
+      - name: Release
+        uses: softprops/action-gh-release@v1s/')
         with:
-          name: CHANGELOG.txt
-          path: ./
+          files: Release.txt
+          files: obj/main
