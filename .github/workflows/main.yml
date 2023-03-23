@@ -9,4 +9,5 @@ jobs:
         with:
           node-version: '14'
       - run: sudo apt install gnat gprbuild
+      - run: mkdir obj
       - run: gprbuild -Pdefault
