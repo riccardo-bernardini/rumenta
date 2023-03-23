@@ -13,3 +13,7 @@ jobs:
       - run: gprbuild -Pdefault
       - name: Generate Changelog
         run: echo "# Good things have arrived" > ${{ github.workspace }}-CHANGELOG.txt
+      - uses: actions/upload-artifact@v3
+        with:
+          name: {{ github.workspace }}-CHANGELOG.txt
+          path: ./
