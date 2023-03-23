@@ -11,3 +11,5 @@ jobs:
       - run: sudo apt install gnat gprbuild
       - run: mkdir obj
       - run: gprbuild -Pdefault
+      - name: Generate Changelog
+        run: echo "# Good things have arrived" > ${{ github.workspace }}-CHANGELOG.txt
