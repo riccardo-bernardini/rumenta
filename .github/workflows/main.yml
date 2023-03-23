@@ -14,6 +14,6 @@ jobs:
       - name: Generate Changelog
         run: echo "# Good things have arrived" > ${{ github.workspace }}-CHANGELOG.txt
       - name: Release
-        uses: softprops/action-gh-release@v1s/')
+        uses: softprops/action-gh-release@v1s/
         with:
           files: obj/main
