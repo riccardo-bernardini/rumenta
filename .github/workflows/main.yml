@@ -9,4 +9,6 @@ jobs:
         with:
           node-version: '14'
       - run: ls
+      - run: apt install gnat gprbuild
+      
       
